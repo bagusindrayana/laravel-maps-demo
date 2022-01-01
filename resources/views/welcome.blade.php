@@ -28,7 +28,7 @@
     'providers'=>[
         //....
 
-        Bagusindrayana\LaravelMaps\LaravelMapServiceProvider::class,
+        Bagusindrayana\LaravelMaps\LaravelMapsServiceProvider::class,
 
         //...
     ],
