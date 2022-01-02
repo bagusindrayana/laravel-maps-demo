@@ -47,6 +47,22 @@
     MAPBOX_ACCESS_TOKEN=
             </code>
         </pre>
+        <h3>Usage</h3>
+        <p>In Controller</p>
+        <pre>
+            <code class="php">
+    $map = LaravelMaps::leaflet('map')
+    ->setView([51.505, -0.09], 13);
+    
+    return view('your-view',compact('map'));
+            </code>
+        </pre>
+        <p>In View</p>
+        <pre>
+            <code class="html">
+    {{$html}}
+            </code>
+        </pre>
         <h3>Leaflet</h3>
         <hr>
         <h4>Features</h4>

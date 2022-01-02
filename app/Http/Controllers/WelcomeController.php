@@ -16,7 +16,17 @@ class WelcomeController extends Controller
 
     public function index()
     {
-        return view('welcome');
+        $html = '<html>
+        <head>
+            <title>My Map</title>
+            {!! @$map->styles() !!}
+        </head>
+        <body>
+            {!! @$map->render() !!}
+            {!! @$map->scripts() !!}  
+        </body>
+    </html>';
+        return view('welcome',compact('html'));
     }
 
     public function leaflet($menu)
