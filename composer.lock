@@ -68,16 +68,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bagusindrayana/laravel-maps.git",
-                "reference": "92b59a6d027c26f940969caa16155faf85c242b6"
+                "reference": "efab00de031d1b5d595ca2313363647c33d68b6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bagusindrayana/laravel-maps/zipball/92b59a6d027c26f940969caa16155faf85c242b6",
-                "reference": "92b59a6d027c26f940969caa16155faf85c242b6",
+                "url": "https://api.github.com/repos/bagusindrayana/laravel-maps/zipball/efab00de031d1b5d595ca2313363647c33d68b6c",
+                "reference": "efab00de031d1b5d595ca2313363647c33d68b6c",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Bagusindrayana\\LaravelMaps\\LaravelMapsServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Bagusindrayana\\LaravelMaps\\": "src/"
@@ -96,9 +103,9 @@
             "description": "set mapbox and leaflet map initiation from within laravel",
             "support": {
                 "issues": "https://github.com/bagusindrayana/laravel-maps/issues",
-                "source": "https://github.com/bagusindrayana/laravel-maps/tree/master"
+                "source": "https://github.com/bagusindrayana/laravel-maps/tree/v0.2.1"
             },
-            "time": "2022-01-01T15:38:37+00:00"
+            "time": "2022-01-01T16:43:32+00:00"
         },
         {
             "name": "brick/math",

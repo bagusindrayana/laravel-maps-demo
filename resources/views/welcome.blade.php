@@ -34,6 +34,12 @@
     ],
             </code>
         </pre>
+        <p>Publish provider</p>
+        <pre>
+            <code class="bash">
+    php artisan vendor:publish --provider=Bagusindrayana\LaravelMaps\LaravelMapsServiceProvider
+            </code>
+        </pre>
         <p>if want use mapbox</p>
         <p>Add Mapbox Acces Token in .env</p>
         <pre>
@@ -64,6 +70,7 @@
         <h4>Basic Usage</h4>
         <pre>
             <code class="php">
+    //'map' is variable name will be use in javascript code
     $map = LaravelMaps::leaflet('map')
     ->setView([51.505, -0.09], 13)
     ->addMarker(function(LeafletMarker $marker){
@@ -112,6 +119,7 @@
         <h4>Basic Usage</h4>
         <pre>
             <code class="php">
+    //'map' is variable name will be use in javascript code
     $map = LaravelMaps::mapbox('map',[
         "center"=>[106.827293,-6.174465],
         "zoom"=>13,
